@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="css/common.css">
     <title>Chat</title>
 </head>
-<body>
+<body class="chats__body">
+
+
+<div class="header-wrapper">
+
     <div class="statusBar">
         <div class="statusBar__column">
             <span class="statusBar__telecom">KT</span>
@@ -43,43 +47,48 @@
         </div>
     </header>
 
+</div>
 
-    <main class="chat">
+
+    
+
+
+    <main class="chat-screen">
         <ul class="chat__messages">
-            <span class="chat__timestamp">Friday, January 11, 2019</span>
+            <span class="chat__timestamp">Wednesday, May 27, 2020</span>
             <li class="incoming-message message">
-                <img src="images/avatar.jpg" alt="" class="g-avatar message__avatar">
+                <img src="images/cat3.jpg" alt="" class="g-avatar message__avatar friend__avatar">
                 <div class="message__content">
                     <span class="message__author">
                         Best Friend
                     </span>
-                    <div class="message__bubble">
+                    <span class="message__bubble">
                         Congrats I love you!
-                    </div>
+                    </span>
                 </div>
                 <span class="message__timestamp"></span>
             </li>
 
 
-            <li class="incoming-message message">
+            <li class="sent-message message">
                 <span class="message__timestamp"></span>
                 <div class="message__content">
-                    <div class="message__bubble">
+                    <span class="message__bubble">
                         Thank you see you soon:)
-                    </div>
+                    </span>
                 </div>
             </li>
 
 
             <li class="incoming-message message">
-                <img src="images/avatar.jpg" alt="" class="g-avatar message__avatar">
+                <img src="images/cat3.jpg" alt="" class="g-avatar message__avatar friend__avatar">
                 <div class="message__content">
                     <span class="message__author">
                         Best Friend
                     </span>
-                    <div class="message__bubble">
-                        Send my heart
-                    </div>
+                    <span class="message__bubble">
+                        I miss you :(
+                    </span>
                 </div>
                 <span class="message__timestamp"></span>
             </li>
@@ -92,21 +101,24 @@
 
 
 
-    <div class="chat__write">
-        <div class="chat__write-column">
+    <div class="chat__write-container">
+        <input type="text" placeholder="Send message" class="chat__write chat__write-input">
+        <div class="chat__icon-left chat__icon">
             <i class="far fa-plus-square"></i>
         </div>
-        <div class="chat__write-column">
-            <input type="text" placeholder="Send message" class="chat__write-input">
-        </div>
-        <div class="chat__write-column">
+        <div class="chat__icon-right chat__icon">
             <span class="chat__write-icon">
                 <i class="far fa-smile-wink"></i>
-            </span>
-            <span class="chat__write-icon">
-                <i class="fas fa-microphone"></i>
+                <!-- <i class="fas fa-microphone"></i> -->
             </span>
         </div>
+    </div>
+
+
+    <div class="bigScreen">
+        <span class="bigScreen__text">
+            Plz make your screen small! XD
+        </span>
     </div>
 
 
